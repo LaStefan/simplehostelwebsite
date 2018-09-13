@@ -1,8 +1,44 @@
 body {
-    background-color: lightblue;
+    background: #804000 url("background.jpg") repeat-y center top fixed;
+    /**margin-right: 200px;*/
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    /*margin-left: 20px;*/
+    font-size: 3vw;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+}
+.bigyellow{
+    color: yellow; font-size: larger; /*create a general class <h1 class="normal">My name is Hege Refsnes.</h1>*/
+    font-variant: normal;
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+p.small {                   /*specify which kind of element can be afected by this class: <p class="small normal">My name is Hege Refsnes.</p>*/
+    font-variant: small-caps;
 }
+
+
+#specific_id {                    /*<p id="para1">Hello World!</p>*/
+    text-align: center;
+    color: red;
+}
+
+/* Borders
+.Bdotted {border-style: dotted;}
+.Bdashed {border-style: dashed;}
+.Bsolid {border-style: solid;}
+.Bdouble {border-style: double;}
+.Bgroove {border-style: groove;}
+.Bridge {border-style: ridge;}
+.Binset {border-style: inset;}
+.Boutset {border-style: outset;}
+.Bnone {border-style: none;}
+.Bhidden {border-style: hidden;}
+.Bmix {border-style: dotted dashed solid double;}
+*/
