@@ -1,27 +1,27 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background: #804000 url("background.jpg") repeat-y center top fixed;
     /**margin-right: 200px;*/
     text-align: center;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
 }
-h1, h2, h3{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    /*margin-left: 20px;*/
-    font-size: 3vw;
-    letter-spacing: 3px;
+.floatright{
+    float: right;
+}
+.floatleft{
+    float: left;
+}
+.floatcenter{
+    float: center;
 }
 a {
     text-decoration: none;      /*clear the underline on html links*/
 }
 a:hover {                       /*:active  :visited :link*/
     background-color: hotpink;
-}
-div {
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
 }
 p {
     font-family: 'Times New Roman', Times, serif;
@@ -42,9 +42,27 @@ p {
      cursor: pointer;
      white-space: nowrap;
  }
-.bigyellow{
-    color: yellow; font-size: larger; /*create a general class <h1 class="normal">My name is Hege Refsnes.</h1>*/
-    font-variant: normal;
+.home{
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.fotterbox {
+    float: left;
+    width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 50px; /* if you want space between the images */
+}
+.navbox{
+    float: left;
+    width: 20%;
+    padding: 2vw;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 p.uppercase {
     text-transform: uppercase;
