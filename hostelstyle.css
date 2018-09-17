@@ -108,3 +108,71 @@ img {
     max-width: 50%;
     max-height: 50%;
 }
+.pfont{
+/*text-align:center;*/
+    color:white;
+    font-family: "Arial";
+    font-style: oblique;
+    font-size:1.5vw;
+/*position: center;*/
+
+    float: left;
+    width: 50vw;
+    border:0.1vw solid #73AD21;
+    padding: 5vw;
+
+}
+
+.pfont1{
+    text-align:center;
+float:bottom;
+    padding-top: 20vw;
+    color:white;
+    font-family: "Arial";
+    font-style: oblique;
+    font-size:3vw;
+    position: center;
+}
+.hostelimg{
+    padding-top: 20vw;
+
+
+
+
+}
+.mapimg{
+    float:right;
+    width: 30vw;
+    lenght: 25vw;
+    border-radius: 2vw;
+    display:block;
+    padding-top: 4vw;
+    padding-right: 5vw;
+
+}
+.contactpar{
+    font-family: Arial;
+    float:left;
+padding-left: 10vw;
+}
+.imgcontact{
+    position: center;
+    padding-right: 20vw;
+    padding-top: 10vw;
+
+}
+.formcontact{
+    float:right;
+padding-right: 150px;
+   display:block;
+
+}
+/*input[type=button]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}*/
