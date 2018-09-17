@@ -2,97 +2,49 @@
     box-sizing: border-box;
 }
 body {
-    background: #804000 url("background.jpg") repeat-y center top fixed;
-    /**margin-right: 200px;*/
+    background: #0e0d0d url("background.jpg") repeat-y center top fixed;
     text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
-.floatright{
-    float: right;
+
+a{
+    text-decoration: none;
 }
-.floatleft{
-    float: left;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-.floatcenter{
-    float: center;
-}
-a {
-    text-decoration: none;      /*clear the underline on html links*/
-}
-a:hover {                       /*:active  :visited :link*/
-    background-color: hotpink;
-}
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
-    line-height: 1.0;
+li.nav {
+    vertical-align: middle;
+    display: inline-block;
 }
 .button {
-     border: none;
-     margin: 2vw;
-     display: inline-block;
-     padding: 8px 16px;
-     vertical-align: middle;
-     overflow: hidden;
-     text-decoration: none;
-     color: #FFFFFF;
-     background-color: #4CAF50;
-     text-align: center;
-     cursor: pointer;
-     white-space: nowrap;
- }
-.home{
-    border: none;
-    display: inline-block;
+    /*border: none;*/
+    margin: 2.3vw;
+    /*display: inline-block;*/
+    padding: 1vw;
     vertical-align: middle;
+    /*overflow: hidden;*/
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #c9d700;
+    text-align: center;
     cursor: pointer;
     white-space: nowrap;
 }
+
 .fotterbox {
     float: left;
-    width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
-    padding: 50px; /* if you want space between the images */
-}
-.navbox{
-    float: left;
-    width: 20%;
-    padding: 2vw;
+    width: 30%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    height: 30vw;
+    margin: 1%;
+    padding: 1vw; /* if you want space between the images */
+    background-color: #0e0d0d;
 }
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
-p.uppercase {
-    text-transform: uppercase;
-}
-
-p.lowercase {
-    text-transform: lowercase;
-}
-
-p.capitalize {
-    text-transform: capitalize;
-}
-p.small { /*specify which kind of element can be afected by this class: <p class="small normal">My name is Hege Refsnes.</p>*/
-    font-variant: small-caps;
-}
-#specific_id {                    /*<p id="para1">Hello World!</p>*/
-    text-align: center;
-    color: red;
-}
-
-/* Borders
-.Bdotted {border-style: dotted;}
-.Bdashed {border-style: dashed;}
-.Bsolid {border-style: solid;}
-.Bdouble {border-style: double;}
-.Bgroove {border-style: groove;}
-.Bridge {border-style: ridge;}
-.Binset {border-style: inset;}
-.Boutset {border-style: outset;}
-.Bnone {border-style: none;}
-.Bhidden {border-style: hidden;}
-.Bmix {border-style: dotted dashed solid double;}
-*/
