@@ -16,20 +16,22 @@
 </nav>
 <!--********************CONTENT********************-->
 
-<div class="content">
+<div class="content clearfix">
     <form>
   <div class="row">
-      <div class="formhead">
+      <div class="inrow">
           <label class="formlabel">Arrival Date</label>
           <input class="focus" type="date" name="bday">
       </div>
-      <div class="formhead">
+      <div class="inrow">
           <label class="formlabel">Departure Date</label>
           <input class="focus" type="date" name="bday">
       </div>
-      <div class="formhead">
+      <div class="inrow">
           <label class="formlabel">Number of Guests</label>
-          <input style="text-align: center" class="focus" type="number" name="guests" min="1" max="10" value="1">
+          <input id="numberofguests" class="focus" type="number" name="guests"
+                 min="1" max="10"
+                 value="1">
       </div>
   </div>
   <div class="formdiv">
@@ -37,12 +39,24 @@
       <input class="focus" type="text" name="firstname" placeholder="First name">
       <label class="formlabel"> Last name:</label>
       <input class="focus" type="text" name="lastname" placeholder="Last name">
-      <div>
-          <label class="formlabel">Birthday:</label>
-          <input class="focus" type="date" name="birthday" max="2001-01-01">
+      <div class="row">
+          <div class="collum" style="margin-left: 0;">
+            <label class="formlabel">Birthday:</label>
+            <input class="focus" type="date" name="birthday" max="2001-01-01">
+          </div>
+          <div class="collum">
+              <label class="formlabel">Gender:</label>
+              <input id="genderdiv" class="focus" list="gender" name="Gender">
+              <datalist id="gender">
+                  <option value = "Male">
+                  <option value= "Female">
+                  <option value="Other">
+              </datalist>
+          </div>
+          <div class="collum" style="margin-right: 0;">
           <label class="formlabel">Nationality:</label>
           <select class="focus" name="nationality">
-              <option value="">-- select one --</option>
+              <option value="">- select one -</option>
               <option value="afghan">Afghan</option>
               <option value="albanian">Albanian</option>
               <option value="algerian">Algerian</option>
@@ -236,35 +250,33 @@
               <option value="zambian">Zambian</option>
               <option value="zimbabwean">Zimbabwean</option>
           </select>
-          <label class="formlabel">Gender:</label>
-          <input class="focus" list="gender" name="Gender">
-          <datalist id="gender">
-              <option value = "Male">
-              <option value= "Female">
-              <option value="Other">
-          </datalist>
+          </div>
       </div>
       <label class="formlabel">Contact:</label>
       <input class="focus" type="tel" name="contact" value="">
       <label class="formlabel">E-mail:</Label>
       <input class="focus" type="email" name="email">
   </div>
-    <div class="formdiv">
-        <div class="formimg">
-            <img src="fourbed.jpeg"  alt="Four People Bedroom." style="width:150px;height:125px;border:0;">
-            <input type="radio" name="roomtype" value="four">Four Beds Room
+    <div class="formdiv formimg">
+        <div class="row">
+            <div class="collum">
+                <img src="fourbed.jpeg"  alt="Four People Bedroom.">
+                <input type="radio" name="roomtype" value="four">Four Beds Room
+            </div>
+            <div class="collum">
+                <img src="eightbed.jpeg"  alt="Eight People Bedroom.">
+                <input type="radio" name="roomtype" value="eight">Eight Beds Room
+            </div>
         </div>
-        <div class="formimg">
-            <img src="eightbed.jpeg"  alt="Eight People Bedroom." style="width:150px;height:125px;border:0;">
-            <input type="radio" name="roomtype" value="eight">Eight Beds Room
-        </div>
-        <div class="formimg">
-            <img src="tenbed.jpeg"  alt="Ten People Bedroom." style="width:150px;height:125px;border:0;">
-            <input type="radio" name="roomtype" value="ten">Ten Beds Room
-        </div>
-        <div class="formimg">
-            <img src="twelvebed.jpeg"  alt="Twelve People Bedroom." style="width:150px;height:125px;border:0;">
-            <input type="radio" name="roomtype" value="twelve">Twelve Beds Room
+        <div class="row">
+            <div class="collum">
+                <img src="tenbed.jpeg"  alt="Ten People Bedroom.">
+                <input type="radio" name="roomtype" value="ten">Ten Beds Room
+            </div>
+            <div class="collum">
+                <img src="twelvebed.jpeg"  alt="Twelve People Bedroom.">
+                <input type="radio" name="roomtype" value="twelve">Twelve Beds Room
+            </div>
         </div>
     </div>
         <div style="float: right; width:100%;">

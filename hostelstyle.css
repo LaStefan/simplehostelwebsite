@@ -121,18 +121,18 @@ img {
     clear: both;
     display: table;
 }
+
 .googlemap{
     frameborder: 0;
     max-width: 50%;
     max-height: 50%;
 }
 .pfont{
-/*text-align:center;*/
+    text-align:center;
     color:white;
-    font-family: 'Arial', Serif;
     font-style: oblique;
     font-size:1.5vw;
-/*position: center;*/
+    position: center;
 
     float: left;
     width: 50vw;
@@ -181,21 +181,24 @@ padding-left: 10vw;
     display:block;
 }
 .row{
+    display: flex;
+    flex-direction: row;
     max-width: 100%;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.collum{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: 2%;
 }
-.formhead{
+.inrow{
     float: left;
     max-width: 33%;
     text-align:center;
     margin: 0 5% 0 5%;
 }
 .formlabel{
-    font-size: 1.5vw;
+    font-size: 90%;
 }
 .formdiv{
     float: left;
@@ -203,17 +206,19 @@ padding-left: 10vw;
     margin: 1%;
 }
 .formimg {
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 .focus {
     width: 99%;
     max-width: 100%;
     padding: 0.6vw 0.96vw;
     box-sizing: border-box;
-    border:  solid #ddd;
+    border:  0.15vw solid #ddd;
     margin: 0.5%;
     background-color: #0e0d0d;
     color: #FFFFFF;
+    font-family: 'Trocchi', Serif;
 }
 .focus:focus{
     outline: none;
@@ -222,13 +227,35 @@ padding-left: 10vw;
     border: 0.2vw solid #c9d700;
     color: #FFFFFF;
 }
+#numberofguests{
+    text-align: center;
+    width: 50%;
+}
+#genderdiv{
+    text-align: center;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+textarea {
+    resize: vertical;
+    height: 8vw;
+    font-family: 'Trocchi', Serif;
+}
+
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
+    background-color: #c9d700;
+    color: #0e0d0d;
+    padding: 0.9% 1.44%;
+    font-size: 100%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
     margin: 1%;
+    font-family: 'Trocchi', Serif;
+}
+input[type=submit]:hover {
+    background-color: hotpink;
+    color: white;
+    opacity: 1.0;
 }

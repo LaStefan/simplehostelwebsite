@@ -15,25 +15,39 @@
     <div class="navbox navside"><a class = "button"  href="contact.html" title="Contact">Contact</a></div>
 </nav>
                         <!--********************CONTENT********************-->
-<div class="content">
-    <div class="contactpar"><h2>Address:</h2><p>Mecklenburgstraat 53,<br>5644NK Eindhoven</p>
-        <p><h2>Phone:</h2>+31 6 20104614<br>+31 6 12453476</p>
-        <p><h2>Opening hours:</h2>Open 00-24</p>
-         <p><h2>Check-In:</h2>00-24</p>
+<div class="content clearfix">
+    <div class="row">
+        <div class="collum">
+            <h2>Address:</h2>
+            <p>Mecklenburgstraat 53,<br>5644NK Eindhoven</p>
+        </div>
+        <div class="collum">
+            <h2>Phone:</h2>
+            <p>+31 6 20104614<br>+31 6 12453476</p>
+        </div>
+        <div class="collum">
+            <h2>Opening hours:</h2>
+            <p>Open 24h</p>
+        </div>
     </div>
-    <div class="imgcontact"><img src="hostelpic1.jpg" alt="Hostel" ></div>
-<div >
-<form class="formcontact"> Full Name:<br>
-    <input  type="text" name="fullname" value="">
-    <br>
-    E-mail:<br>
-    <input type="email" name="email" value=""><br>
-    Send us a message: <br>
-    <input type="text" name="message" value="">
-    <br><br>
-    <input type="submit" value="Send" onclick="alert
-    ('Message successfully sent. Your problem is getting solved, thanks for the patience!')"></form></div></div>
-
+    <div class="row">
+        <div class="collum">
+            <img src="hostelpic1.jpg" alt="Hostel" >
+        </div>
+        <div class="collum">
+            <form class="formlabel">
+                Full Name:
+                <input class="focus" type="text" name="fullname" placeholder="Full Name">
+                E-mail:
+                <input class="focus" type="email" name="email" placeholder="E-mail"><br>
+                Send us a message:
+                <textarea class="focus" name="message" placeholder="Write something..."></textarea>
+                <input type="submit" value="Send"
+                       onclick="alert('Message successfully sent. Your problem is getting solved, thanks for the patience!')">
+            </form>
+        </div>
+    </div>
+</div>
                     <!--********************CONTENT********************-->
 <footer class="clearfix">
     <div class = "fotterbox">
