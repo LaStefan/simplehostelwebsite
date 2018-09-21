@@ -184,12 +184,24 @@ padding-left: 10vw;
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    margin: auto;
 }
 .collum{
     display: flex;
     flex-direction: column;
     width: 96%;
     margin: 2%;
+}
+.imghover{
+    padding: 2%;
+}
+.imghover:hover{
+    background-color: #c9d700;
+    color: #0e0d0d;
+    cursor: pointer;
+}
+.imgborder{
+    border-radius: 5%;
 }
 .inrow{
     float: left;
@@ -199,28 +211,35 @@ padding-left: 10vw;
 }
 .formlabel{
     font-size: 90%;
+    margin: 1%;
+    line-height: 2;
 }
 .formdiv{
     float: left;
     width:48%;
     margin: 1%;
-}
-.formimg {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .focus {
     width: 99%;
     max-width: 100%;
     padding: 0.6vw 0.96vw;
     box-sizing: border-box;
-    border:  0.15vw solid #ddd;
+    border:  0.2vw solid #ddd;
     margin: 0.5%;
     background-color: #0e0d0d;
     color: #FFFFFF;
     font-family: 'Trocchi', Serif;
 }
 .focus:focus{
+    outline: none;
+    max-width: 100%;
+    background-color: #0e0d0d;
+    border: 0.2vw solid #c9d700;
+    color: #FFFFFF;
+}
+.focus:hover{
     outline: none;
     max-width: 100%;
     background-color: #0e0d0d;

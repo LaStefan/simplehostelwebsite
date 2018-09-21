@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="hostelstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
     <title>S&B Hostel</title>
+    <link rel="icon" href="iconlogo.png">
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="hostelstyle.css">
 </head>
 <body>
 <nav id="navid" class= "clearfix">
@@ -16,15 +17,16 @@
 </nav>
 <!--********************CONTENT********************-->
     
-    <div class="content">
+    <div class="content clearfix">
         <form>
-            E-mail:<br>
-            <input type="email" name="username"><br>
-            Password:<br>
-            <input type="password" name="psw"><br>
-            <input type="button" onclick="alert('Login Successful')" value="Login">
-            <input type="button" onclick="alert('Check Your e-mail!')" value="Forgot Password">
-            <br>
+            <div style="width:40%;margin-right: auto;margin-left: auto;">
+                <label class="formlabel">E-mail:</label>
+                <input class="focus" type="email" name="username"><br>
+                <label class="formlabel">Password:</label>
+                <input class="focus" type="password" name="psw"><br>
+            </div>
+            <input type="submit" onclick="alert('Login Successful')" value="Login">
+            <input type="submit" onclick="alert('Check Your e-mail!')" value="Forgot Password">
         </form>
     </div>
 
