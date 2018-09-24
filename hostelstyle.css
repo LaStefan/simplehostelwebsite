@@ -321,16 +321,16 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
-.active {
+.active, .dot:hover {
     background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
