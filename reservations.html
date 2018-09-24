@@ -3,7 +3,7 @@
 <head>
     <title>S&B Hostel</title>
     <link rel="icon" href="iconlogo.png">
-    <script src="myScript.js"></script>
+    <script src="hostel_script.js"></script>
     <link rel="stylesheet" type="text/css" href="hostelstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
 
@@ -284,9 +284,11 @@
         </div>
     </div>
         <div style="float: right; width:100%;">
-            <input type="submit" value="Register" onclick="alert('Account Created Successfully! Check your e-mail.')">
+            <input style="float:left" type="submit" value="Log in" onclick="account.html">
+            <input style="float:left" type="submit" value="Register and Book"
+                   onclick="alert('Account Created Successfully! Check your e-mail.')">
             <input type="submit" value="Just Book" onclick="alert('Booking Successfully Created!')">
-            <input type="submit" value="Log in" onclick="account.html">
+
         </div>
     </form>
 </div>

@@ -3,7 +3,7 @@
 <head>
     <title>S&B Hostel</title>
     <link rel="icon" href="iconlogo.png">
-    <script src="myScript.js"></script>
+    <!--<script src="hostel_script.js"></script>-->
     <link rel="stylesheet" type="text/css" href="hostelstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
 
@@ -18,10 +18,36 @@
         <div class="navbox navside"><a class = "button"  href="contact.html" title="Contact">Contact</a></div>
 </nav>
                             <!--********************CONTENT********************-->
+<div class="content clearfix">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-    <div>
-        <img id="homeimg" src="homepage.png" alt="Special offers">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class = "homeimg" src="homepage1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class = "homeimg" src="homepage2.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class = "homeimg" src="homepage3.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
     </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
 
                             <!--********************CONTENT********************-->
     <footer class="clearfix">
@@ -47,5 +73,27 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
