@@ -154,13 +154,14 @@ img {
     padding-top: 20vw;
 }
 .mapimg{
-    float:right;
-    width: 30vw;
-    lenght: 25vw;
-    border-radius: 2vw;
-    display:block;
-    padding-top: 4vw;
-    padding-right: 5vw;
+   display:flex;
+    flex-direction:row;
+    padding-left: 15%;
+    padding-top: 4%;
+padding-bottom: 5%;
+
+
+
 
 }
 .contactpar{
