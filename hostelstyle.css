@@ -150,9 +150,11 @@ img {
 .mapimg{
    display:flex;
     flex-direction:row;
-    padding-left: 15%;
-    padding-top: 4%;
-    padding-bottom: 5%;
+    width:500px;
+    height:400px;
+margin-left: 65%;
+
+
 }
 .contactpar{
     font-family: Arial;
