@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+div{
+    max-width: 100%;
+}
+body {
+    background: #0e0d0d url("background.jpg") repeat-y center top fixed;
+    text-align: center;
+    color: white;
+    font-family: 'Trocchi', Serif;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    background-color: hotpink;
+    color: white;
+    opacity: 1.0;
+}
+a:active{
+    background-color: hotpink;
+    color: white;
+    opacity: 1.0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.homeimg{
+    max-height: 492px;
+    box-shadow: 0 0.4vw 0.8vw 0 rgba(0, 0, 0, 0.2), 0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    /*margin: 1vw;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+#navid{
+    max-width: 100%;
+    max-height: 10%;
+    margin: 2.5vw 1vw 1vw 1vw;
+}
+.navbox{
+    float: left;
+    width: 20%;
+    vertical-align: center;
+    horiz-align: center;
+    padding: 4vw 0vw 4vw 0vw;
+    max-width: 100%;
+}
+.button {
+    border: none;
+    display: inline-block;
+    padding: 1vw 1.5vw;
+    font-size: 1.5vw;
+    max-width: 100%;
+    width:80%;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: 'Trocchi', serif;
+    color: #0e0d0d;
+    /*background-image: linear-gradient(#c9d700,yellow);*/
+    background-color: #c9d700;
+    text-align: center;
+    cursor: pointer;
+    /*white-space: nowrap;*/
+    border-radius: 5px;
+    opacity: 0.9;
+}
+.navside{
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+}
+.mButton{
+     font-size: 2vw;
+ }
+.cbutton{
+
+}
+#logoid{
+    padding: unset;
+}
+.content{
+    float: left;
+    width: 100%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    height: auto;
+    margin: 1%;
+    background-color: #0e0d0d;
+    opacity: 0.9;
+    padding: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fotterbox {
+    float: left;
+    width: 31.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    height: auto;
+    margin: 1%;
+    /*padding: 1vw; /* if you want space between the images */
+    background-color: #0e0d0d;
+    opacity: 0.9;
+    padding: 1.5vw;
+}
+.social{
+     float: left;
+     width: 30%; /* three boxes (use 25% for four, and 50% for two, etc) */
+     margin: 1%;
+     padding: 1vw; /* if you want space between the images */
+ }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.pfont{
+    text-align:center;
+    color:white;
+    font-style: oblique;
+    font-size:1.5vw;
+    position: center;
+
+    float: left;
+    width: 50vw;
+    border:0.1vw solid #73AD21;
+    padding: 5vw;
+
+}
+
+.pfont1{
+    text-align:center;
+    float:bottom;
+    padding-top: 20vw;
+    color:white;
+    font-family: "Arial";
+    font-style: oblique;
+    font-size:3vw;
+    position: center;
+}
+.hostelimg{
+    padding-top: 20vw;
+}
+.mapimg{
+   display:flex;
+    flex-direction:row;
+    width:500px;
+    height:400px;
+margin-left: 65%;
+
+
+}
+.contactpar{
+    font-family: Arial;
+    float:left;
+padding-left: 10vw;
+}
+.imgcontact{
+    position: center;
+    padding-right: 20vw;
+    padding-top: 10vw;
+
+}
+.formcontact{
+    float:right;
+    padding-right: 150px;
+    display:block;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: auto;
+}
+.collum{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: 2%;
+}
+.imghover{
+    padding: 2%;
+}
+.imghover:hover{
+    background-color: #c9d700;
+    color: #0e0d0d;
+    cursor: pointer;
+}
+.imgborder{
+    border-radius: 5%;
+}
+.inrow{
+    float: left;
+    max-width: 33%;
+    text-align:center;
+    margin: 0 5% 0 5%;
+}
+.formlabel{
+    font-size: 90%;
+    margin: 1%;
+    line-height: 2;
+}
+.formdiv{
+    float: left;
+    width:48%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.focus {
+    width: 99%;
+    max-width: 100%;
+    padding: 0.6vw 0.96vw;
+    box-sizing: border-box;
+    border:  0.2vw solid #ddd;
+    margin: 0.5%;
+    background-color: #0e0d0d;
+    color: #FFFFFF;
+    font-family: 'Trocchi', Serif;
+}
+.focus:focus{
+    outline: none;
+    max-width: 100%;
+    background-color: #0e0d0d;
+    border: 0.2vw solid #c9d700;
+    color: #FFFFFF;
+}
+.focus:hover{
+    outline: none;
+    max-width: 100%;
+    background-color: #0e0d0d;
+    border: 0.2vw solid #c9d700;
+    color: #FFFFFF;
+}
+#numberofguests{
+    text-align: center;
+    width: 50%;
+}
+#genderdiv{
+    text-align: center;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+textarea {
+    resize: vertical;
+    height: 8vw;
+    font-family: 'Trocchi', Serif;
+}
+
+input[type=submit] {
+    background-color: #c9d700;
+    color: #0e0d0d;
+    padding: 0.9% 1.44%;
+    font-size: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 1%;
+    font-family: 'Trocchi', Serif;
+}
+input[type=submit]:hover {
+    background-color: hotpink;
+    color: white;
+    opacity: 1.0;
+}
+.closebtn{
+    background-color: indianred;
+    color: white;
+    padding: 0.9% 1.44%;
+    font-size: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1%;
+    font-family: 'Trocchi', Serif;
+}
+.loginbtn {
+    background-color: #c9d700;
+    color: #0e0d0d;
+    padding: 0.9% 1.44%;
+    font-size: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin: 1%;
+    font-family: 'Trocchi', Serif;
+}
+.loginbtn:hover{
+    background-color: hotpink;
+    color: white;
+    opacity: 1.0;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    /*max-width: 1000px;*/
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #cecaca;
+    padding-top: 10%;
+    /*opacity: 0.8;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #0e0d0d;
+    margin: 5% auto 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    /*height: 30vw;*/
+    opacity: 1;
+    height: fit-content;
+
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.container {
+    padding: 16px;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
