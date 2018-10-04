@@ -5,7 +5,7 @@
  * Date: 04/10/2018
  * Time: 00:41
  */ ?>
-<!DOCTYPE html>
+
 <html>
 <head>
     <?php include '../helper/header.php';?>
