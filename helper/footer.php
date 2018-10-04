@@ -15,7 +15,7 @@
     <div class="social"><a href="https://www.facebook.com" title="Follow us on facebook!"><img src="facebook.png" alt="FACEBOOK"></a></div>
     <div class="social"><a href="https://www.instagram.com" title="Follow us on Insta!"><img src="instagram.png" alt="INSTAGRAM"></a></div>
     <div class="social"><a href="https://twitter.com" title="Follow us on the birdy!"><img src="twitter.png" alt="TWITTER"></a></div>
-</div>
+   </div>
 <div class = "fotterbox">
     <ul>
         <li><h3><b>Site Map</b></h3></li>
@@ -26,4 +26,9 @@
         <li><a href="guidance.php">Guidance</a></li>
         <li><a href="contact.php">Contact</a></li>
     </ul>
+
+
 </div>
+<div ><?php
+    echo "<p>Copyright &copy; 1999-" . date("Y") . " Stefan&Bernardo</p>";
+    ?></div>
