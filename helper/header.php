@@ -7,7 +7,7 @@
  */ ?>
 
 <title>S&B Hostel</title>
-<link rel="icon" href="iconlogo.png">
-<!--<script src="hostel_script.js"></script>-->
-<link rel="stylesheet" type="text/css" href="hostelstyle.css">
+<link rel="icon" href="../php/iconlogo.png">
+<script src="../php/hostel_script.js"></script>
+<link rel="stylesheet" type="text/css" href="../php/hostelstyle.css">
 <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">

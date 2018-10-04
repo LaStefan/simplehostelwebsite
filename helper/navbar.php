@@ -9,9 +9,9 @@
 
 <nav id="navid" class= "clearfix">
 
-    <div class="navbox navside"><a class = "button" href="about.html" title="About">About</a></div>
-    <div class="navbox"><a class = "button mButton" href="reservations.html" title="Reservations">Reservations</a></div>
-    <div id="logoid" class="navbox"><a class = "cbutton" href= "index.html" title= "Homepage"><img class = "home" src="Logo.png" alt="Home"></a></div>
-    <div class="navbox"><a class = "button mButton" href="guidance.html" title="Guidance">Guidance</a></div>
-    <div class="navbox navside"><a class = "button" href="contact.html" title="Contact">Contact</a></div>
+    <div class="navbox navside"><a class = "button" href="../php/about.php" title="About">About</a></div>
+    <div class="navbox"><a class = "button mButton" href="../php/reservations.php" title="Reservations">Reservations</a></div>
+    <div id="logoid" class="navbox"><a class = "cbutton" href= "../php/index.php" title= "Homepage"><img class = "home" src="../php/Logo.png" alt="Home"></a></div>
+    <div class="navbox"><a class = "button mButton" href="../php/guidance.php" title="Guidance">Guidance</a></div>
+    <div class="navbox navside"><a class = "button" href="../php/contact.php" title="Contact">Contact</a></div>
 </nav>
