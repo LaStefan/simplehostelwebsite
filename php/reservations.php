@@ -4,7 +4,32 @@
  * User: Stefan Lazarevic
  * Date: 04/10/2018
  * Time: 00:43
- */ ?>
+ */
+session_start();
+$emailError="";
+$passwordError="";
+$FnameError="";
+$LnameError="";
+$GenderError="";
+$birthdayError="";
+$nationalityError="";
+$phoneError="";
+$fields=isset($_SESSION['fields'])?$_SESSION['fields'] :[];
+$errors=isset($_SESSION['errors'])?$_SESSION['errors']: [];
+//print_r($errors);
+//Get error messages
+$emailError=array_key_exists('email',$errors)? $errors['email']:'';
+$passwordError=array_key_exists('password',$errors)? $errors['password']:'';
+$FnameError=array_key_exists('Fname',$errors)? $errors['Fname']:'';
+$LnameError=array_key_exists('Lname',$errors)? $errors['Lname']:'';
+$GenderError=array_key_exists('gender',$errors)? $errors['gender']:'';
+$birthdayError=array_key_exists('birthday',$errors)? $errors['birthday']:'';
+$nationalityError=array_key_exists('nationality',$errors)? $errors['nationality']:'';
+$phoneError=array_key_exists('phone',$errors)? $errors['phone']:'';
+
+
+
+?>
 <html>
 <head>
     <?php include '../helper/header.php';?>
@@ -16,7 +41,7 @@
 <!--********************CONTENT********************-->
 
 <div class="content clearfix">
-    <form>
+    <form action="../DB/register_validation.php" method="post">
         <div class="row">
             <div class="inrow">
                 <label class="formlabel">Arrival Date</label>
@@ -33,17 +58,20 @@
         </div>
         <div class="formdiv">
             <label class="formlabel">First name: </label>
-            <input class="focus" type="text" name="firstname" placeholder="First name" required>
+            <input class="focus" type="text" name="firstname" placeholder="First name">
+
             <label class="formlabel"> Last name:</label>
-            <input class="focus" type="text" name="lastname" placeholder="Last name" required>
+            <input class="focus" type="text" name="lastname" placeholder="Last name">
+
             <div class="row">
                 <div class="collum" style="margin-left: 0;">
                     <label class="formlabel">Birthday:</label>
-                    <input class="focus" type="date" name="birthday" max="2001-01-01" required>
+                    <input class="focus" type="date" name="birthday" max="2001-01-01" >
                 </div>
                 <div class="collum">
                     <label class="formlabel">Gender:</label>
-                    <input id="genderdiv" class="focus" list="gender" name="Gender" required>
+                    <input id="genderdiv" class="focus" list="gender" name="Gender" >
+
                     <datalist id="gender">
                         <option value = "Male">
                         <option value= "Female">
@@ -250,9 +278,12 @@
                 </div>
             </div>
             <label class="formlabel">Contact:</label>
-            <input class="focus" type="tel" name="contact" placeholder="Phone number">
+            <input class="focus" type="tel" name="contact" placeholder="Phone number" required >
+
             <label class="formlabel">E-mail:</Label>
-            <input class="focus" type="email" name="email" placeholder="example@email.com">
+            <input class="focus" type="email" name="email" placeholder="example@email.com" required>
+
+
         </div>
         <div class="formdiv">
             <div class="row">
@@ -274,6 +305,7 @@
                     <img class="imgborder" src="twelvebed.jpeg"  alt="Twelve People Bedroom.">
                     <input type="radio" name="roomType" value="twelve">Twelve Beds Room
                 </div>
+
             </div>
         </div>
         <div style="float: right; width:100%;">
@@ -282,7 +314,7 @@
             <input style="float:left" type="submit" value="Register and Book"
                    onclick="alert('Account Created Successfully! Check your e-mail.')">
             <input type="submit" value="Book Now" onclick="alert('Booking Successfully Created!')">
-
+        </div>
         </div>
     </form>
 
@@ -290,7 +322,7 @@
     <div id="id01" class="modal">
         <!-- Modal Content -->
         <div class="modal-content animate">
-            <form action="/action_page.php">
+            <form>
                 <span onclick="document.getElementById('id01').style.display='none'"
                       class="close" title="Close Modal">&times;
                 </span>

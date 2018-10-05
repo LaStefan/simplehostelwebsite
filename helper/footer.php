@@ -29,6 +29,4 @@
 
 
 </div>
-<div ><?php
-    echo "<p>Copyright &copy; 1999-" . date("Y") . " Stefan&Bernardo</p>";
-    ?></div>
+

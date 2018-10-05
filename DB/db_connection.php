@@ -1,7 +1,23 @@
 <?php
-$conn=mysqli_connect('studmysql01.fhict.local','dbi396268@192.168.15.70','Toresja9898','dbi396268');
+define('HOST','studmysql01.fhict.local');
+define('USER','dbi396268');
+define('PASSWORD','Toresja9898');
+define('DATABASE','dbi396268');
 
-if(!$conn){
-    echo "error trying to connect to db";
-    die("Connection failed: ".mysqli_connect_error());
+function DB()
+{
+    try{
+        $db= new PDO('mysql:host='.HOST.';dname='.DATABASE.'',USER, PASSWORD);
+
+        $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        echo "Connected successfully!";
+        return $db;
+
+    }
+    catch(PDOException $e)
+    {
+        return "PDO Error!: ".$e->getMessage();
+        die();
+    }
+
 }
