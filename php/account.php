@@ -15,7 +15,7 @@
 <!--********************CONTENT********************-->
 
 <div class="content clearfix">
-    <form>
+    <form action="login_form.php" method="post">
         <div style="width:40%;margin-right: auto;margin-left: auto;">
             <label class="formlabel">E-mail:</label>
             <input class="focus" type="email" name="username"><br>

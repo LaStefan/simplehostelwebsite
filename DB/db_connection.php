@@ -7,7 +7,7 @@ define('DATABASE','dbi396268');
 function DB()
 {
     try{
-        $db= new PDO('mysql:host='.HOST.';dname='.DATABASE.'',USER, PASSWORD);
+        $db= new PDO('mysql:host='.HOST.';dname='.DATABASE.'',USER,PASSWORD);
 
         $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         echo "Connected successfully!";

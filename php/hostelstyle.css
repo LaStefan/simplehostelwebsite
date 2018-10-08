@@ -293,7 +293,11 @@ input[type=submit]:hover {
     margin: 1%;
     font-family: 'Trocchi', Serif;
 }
-.loginbtn:hover{
+.bookBtn{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.loginbtn:hover, .bookBtn:hover{
     background-color: hotpink;
     color: white;
     opacity: 1.0;
