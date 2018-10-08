@@ -31,11 +31,11 @@ return $query;
 
 
     }catch(PDOException $e)
-    {
-        exit($e->getMessage());
-        die("An error occured, contact admin");
-    }
-    return 0;
+        {
+            exit($e->getMessage());
+            die("An error occured, contact admin");
+        }
+        return 0;
 }
 
 function CheckUser($email)
@@ -80,7 +80,6 @@ function CheckPassword($password)
     {
         exit($e->getMessage());
     }
-
 }
 function Login($username,$password)
 {
@@ -95,7 +94,6 @@ function Login($username,$password)
         if($query->rowCount()>0)
         {   $result=$query->fetch(PDO::FETCH_OBJ);
         return $result->id;
-
         }
         else
         {

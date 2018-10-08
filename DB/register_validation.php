@@ -23,14 +23,15 @@ if(isset($POST['submit'])){
     $birthday='';
     $gender='';
     $nationality='';
+
 //check username input
-    if(empty($POST["email"]))
+    if(empty($_POST["email"]))
     {
         $errors['email']='The email field is required';
     }
     else
     {
-        $email=$POST["email"];
+        $email=$_POST["email"];
         if(!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email))
         {
             $errors['email']="Invalid email format.right format is e.g: somebody@abc.abc";
@@ -41,13 +42,13 @@ if(isset($POST['submit'])){
         }
     }
     //check password input
-    if(empty($POST["password"]))
+    if(empty($_POST["password"]))
     {
         $errors['password']='The password field is required';
     }
     else
     {
-        $password=$POST["password"];
+        $password=$_POST["password"];
         if(!preg_match("/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/",$password))
         {
             $errors['password']="Invalid format. Must contain at least one number and one uppercase and lowercase letter , and at least 8 or more characters";
@@ -60,13 +61,13 @@ if(isset($POST['submit'])){
     }
 
     //check first name
-    if(empty($POST["Fname"]))
+    if(empty($_POST["Fname"]))
     {
         $errors['Fname']='The first name field is required';
     }
     else
     {
-        $Fname=$POST["Fname"];
+        $Fname=$_POST["Fname"];
         if(!preg_match("/(?=.*[A-Z])/",$Fname))
         {
             $errors['Fname']="Must have one uppercase letter";
@@ -77,13 +78,13 @@ if(isset($POST['submit'])){
         }
     }
 //checks last name
-    if(empty($POST["Lname"]))
+    if(empty($_POST["Lname"]))
     {
         $errors['Lname']='The last name field is required';
     }
     else
     {
-        $Lname=$POST["Lname"];
+        $Lname=$_POST["Lname"];
         if(!preg_match("/(?=.*[A-Z])/",$Lname))
         {
             $errors['Lname']="Must have one uppercase letter";
@@ -95,13 +96,13 @@ if(isset($POST['submit'])){
     }
     //checks gender
 
-    if(empty($POST["gender"]))
+    if(empty($_POST["gender"]))
     {
         $errors['gender']='The gender field is required';
     }
     else
     {
-        $gender=$POST["gender"];
+        $gender=$_POST["gender"];
         if(!preg_match("",$gender))
         {
             $errors['gender'];
@@ -113,13 +114,13 @@ if(isset($POST['submit'])){
     }
     //checks birthday
 
-    if(empty($POST["birthday"]))
+    if(empty($_POST["birthday"]))
     {
         $errors['birthday']='The birthday field is required';
     }
     else
     {
-        $birthday=$POST["birthday"];
+        $birthday=$_POST["birthday"];
         if(!preg_match("",$birthday))
         {
             $errors['birthday'];
@@ -130,13 +131,13 @@ if(isset($POST['submit'])){
         }
     }
     //check nationality
-    if(empty($POST["nationality"]))
+    if(empty($_POST["nationality"]))
     {
         $errors['nationality']='The nationality field is required';
     }
     else
     {
-        $nationality=$POST["nationality"];
+        $nationality=$_POST["nationality"];
         if(!preg_match("",$nationality))
         {
             $errors['nationality'];
@@ -147,13 +148,13 @@ if(isset($POST['submit'])){
         }
     }
     //check phone
-    if(empty($POST["phone"]))
+    if(empty($_POST["phone"]))
     {
         $errors['phone']='The phone field is required';
     }
     else
     {
-        $phone=$POST["phone"];
+        $phone=$_POST["contact"];
         if(!preg_match("",$phone))
         {
             $errors['phone']="";
