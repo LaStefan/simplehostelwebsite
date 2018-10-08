@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9928ed-f6c4-4c5f-b840-7f1775ba5745" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/db_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB/db_connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/db_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB/db_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/register_validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB/register_validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/hostelstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/hostelstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/reservations.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/reservations.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +47,7 @@
     <session id="-1616060881">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.opened" value="2" />
@@ -59,12 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="134" />
+          <entry key="css" value="59" />
+          <entry key="php" value="248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="134" />
+          <entry key="CSS" value="59" />
+          <entry key="PHP" value="248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -89,52 +87,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/reservations.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/registration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="242" column="41" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#select#0;n#div#2;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#15983#15990#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/account.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/hostelstyle.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,9 +100,10 @@
         <option value="$PROJECT_DIR$/DB/db_helper.php" />
         <option value="$PROJECT_DIR$/DB/db_connection.php" />
         <option value="$PROJECT_DIR$/DB/register_validation.php" />
-        <option value="$PROJECT_DIR$/php/reservations.php" />
-        <option value="$PROJECT_DIR$/php/registration.php" />
         <option value="$PROJECT_DIR$/php/account.php" />
+        <option value="$PROJECT_DIR$/php/registration.php" />
+        <option value="$PROJECT_DIR$/php/hostelstyle.css" />
+        <option value="$PROJECT_DIR$/php/reservations.php" />
       </list>
     </option>
   </component>
@@ -229,22 +183,21 @@
       <workItem from="1538661413477" duration="665000" />
       <workItem from="1538737465751" duration="9957000" />
       <workItem from="1538923760221" duration="2124000" />
-      <workItem from="1539000000418" duration="4218000" />
+      <workItem from="1539000000418" duration="7447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17899000" />
+    <option name="totallyTimeSpent" value="21128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -309,39 +262,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/registration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="242" column="41" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
+        <state relative-caret-position="-16">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#select#0;n#div#2;n#div#0;n#div#0;n#form#0;n#body#0;n#!!top" />
             <element signature="n#style#0;n#div#1;n#form#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#15983#15990#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/reservations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="30" />
+        <state relative-caret-position="358">
+          <caret line="79" column="124" lean-forward="true" selection-start-line="79" selection-start-column="124" selection-end-line="79" selection-end-column="124" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/hostelstyle.css">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="296" column="20" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

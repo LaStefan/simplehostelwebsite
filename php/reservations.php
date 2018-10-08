@@ -53,7 +53,7 @@ $phoneError=array_key_exists('phone',$errors)? $errors['phone']:'';
                 <input id="numberofguests" class="focus" type="number" name="guests" min="1" max="10" value="1" required>
             </div>
         </div>
-        <div class="formdiv">
+        <div>
             <div class="row">
                 <div class="collum imghover" onclick="chooseRoom(0)">
                     <img class="imgborder" src="fourbed.jpeg"  alt="Four People Bedroom.">
@@ -74,6 +74,10 @@ $phoneError=array_key_exists('phone',$errors)? $errors['phone']:'';
                     <input type="radio" name="roomType" value="twelve">Twelve Beds Room
                 </div>
             </div>
+        </div>
+        <div style="display: flex; justify-content: space-around; align-content: center">
+            <input class="loginbtn bookBtn" type="reset" value="Reset">
+            <input class="loginbtn bookBtn" type="submit" value="Book Now" onclick="alert('Booking Successfully Created!')">
         </div>
     </form>
 </div>

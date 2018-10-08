@@ -245,47 +245,15 @@
         </div>
 
         <div style="float: right; width:100%;">
-            <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <button class="loginbtn" onclick="">Login</button>
             <!--input style="float:left" type="submit" value="Log in" onclick="account.php"-->
             <input style="float:left" type="submit" value="Register and Book"
                    onclick="alert('Account Created Successfully! Check your e-mail.')">
             <input type="submit" value="Book Now" onclick="alert('Booking Successfully Created!')">
         </div>
     </form>
-
-    <!-- LOG IN MODAL -->
-    <div id="id01" class="modal">
-        <!-- Modal Content -->
-        <div class="modal-content animate">
-            <form>
-                <span onclick="document.getElementById('id01').style.display='none'"
-                      class="close" title="Close Modal">&times;
-                </span>
-                <div class="imgcontainer">
-                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                </div>
-
-
-                <div class="container">
-                    <label class="formlabel" for="uname"><b>Username</b></label>
-                    <input class="focus" type="text" placeholder="Enter Username" name="uname" required>
-
-                    <label class="formlabel" for="psw"><b>Password</b></label>
-                    <input class="focus" style="margin-bottom: 1vw" type="password" placeholder="Enter Password"
-                           name="psw"
-                           required>
-
-                    <input type="submit" value="Log In" onclick="alert('Booking Successfully Created!')">
-                    <label><input type="checkbox" checked="checked" name="remember">Remember me</label>
-                </div>
-                <div class="container">
-                    <button onclick="document.getElementById('id01').style.display='none'" class="closebtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
+
 
 
 <!--********************CONTENT********************-->
