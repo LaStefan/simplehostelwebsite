@@ -5,33 +5,31 @@
  * Date: 08-Oct-18
  * Time: 15:17
  */
-
+?>
 <html>
 <head>
     <?php include '../helper/header.php';?>
-
-
 </head>
 <body>
-<?php include '../helper/navbar.php';?>
+    <?php include '../helper/navbar.php';?>
 <!--********************CONTENT********************-->
-<div class="content clearfix">
+<div id="id_registration" class="content clearfix" style="align-items: center; justify-content: center; display: flex">
     <form action="../DB/register_validation.php" method="post">
         <div class="formdiv">
             <label class="formlabel">First name: </label>
-            <input class="focus" type="text" name="firstname" placeholder="First name">
+            <input class="focus" type="text" name="firstname" placeholder="First name" required>
 
             <label class="formlabel"> Last name:</label>
-            <input class="focus" type="text" name="lastname" placeholder="Last name">
+            <input class="focus" type="text" name="lastname" placeholder="Last name" required>
 
             <div class="row">
                 <div class="collum" style="margin-left: 0;">
                     <label class="formlabel">Birthday:</label>
-                    <input class="focus" type="date" name="birthday" max="2001-01-01" >
+                    <input class="focus" type="date" name="birthday" max="2001-01-01" required>
                 </div>
                 <div class="collum">
                     <label class="formlabel">Gender:</label>
-                    <input id="genderdiv" class="focus" list="gender" name="Gender" >
+                    <input id="genderdiv" class="focus" list="gender" name="Gender" required>
 
                     <datalist id="gender">
                         <option value = "Male">
@@ -242,14 +240,23 @@
             <input class="focus" type="tel" name="contact" placeholder="Phone number" required >
             <label class="formlabel">E-mail:</Label>
             <input class="focus" type="email" name="email" placeholder="example@email.com" required>
+            <label class="formlabel">Password:</Label>
+            <input class="focus" type="password" name="email" placeholder="a-Z+@#19" required>
+            <label class="formlabel">Repeat Password:</Label>
+            <input class="focus" type="password" name="email" placeholder="a-Z+@#19" required>
+            <div style="padding: 2%">
+                <input class="checkBx" type="checkbox"  name="cbx_terms" id="cbx_terms" value="terms_conditions" required>
+                <label for="cbx_terms" class="formlabel">I accept the terms and conditions.</label>
+            </div>
+            <div style="padding: 2%">
+                <input class="checkBx" type="checkbox"  name="cbx_news" id="cbx_news" value="newsletter">
+                <label for="cbx_news" class="formlabel">Register for our Newsletter!</label>
+            </div>
         </div>
-
-        <div style="float: right; width:100%;">
-            <button class="loginbtn" onclick="">Login</button>
+        <div style="display: flex; justify-content: center">
             <!--input style="float:left" type="submit" value="Log in" onclick="account.php"-->
-            <input style="float:left" type="submit" value="Register and Book"
-                   onclick="alert('Account Created Successfully! Check your e-mail.')">
-            <input type="submit" value="Book Now" onclick="alert('Booking Successfully Created!')">
+            <input  class="loginbtn" type="submit" value="Create Account" onclick="alert('Account Created Successfully! Check your e-mail. '<b>'Redirect to Reservations.php')">
+            <input class="loginbtn" type="reset" value="Reset Form">
         </div>
     </form>
 </div>

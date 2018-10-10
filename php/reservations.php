@@ -39,7 +39,7 @@ $phoneError=array_key_exists('phone',$errors)? $errors['phone']:'';
 
 <div class="content clearfix">
     <form action="../DB/reservations_form.php" method="post">
-        <div class="row">
+        <div id = "id_dates" class="row">
             <div class="inrow">
                 <label class="formlabel">Arrival Date</label>
                 <input class="focus" type="date" name="bday" required autofocus>
@@ -56,22 +56,38 @@ $phoneError=array_key_exists('phone',$errors)? $errors['phone']:'';
         <div>
             <div class="row">
                 <div class="collum imghover" onclick="chooseRoom(0)">
-                    <img class="imgborder" src="fourbed.jpeg"  alt="Four People Bedroom.">
-                    <input type="radio" name="roomType" value="four">Four Beds Room
+                    <div>
+                        <img class="imgborder widht_60" src="fourbed.jpeg"  alt="Four People Bedroom.">
+                    </div>
+                    <div style="margin-top: 2%">
+                        <input type="radio" name="roomType" value="four">Four Beds Room
+                    </div>
                 </div>
                 <div class="collum imghover" onclick="chooseRoom(1)">
-                    <img class="imgborder" src="eightbed.jpeg"  alt="Eight People Bedroom.">
+                    <div>
+                        <img class="imgborder widht_60" src="eightbed.jpeg"  alt="Eight People Bedroom.">
+                    </div>
+                    <div style="margin-top: 2%">
                     <input type="radio" name="roomType" value="eight">Eight Beds Room
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="collum imghover" onclick="chooseRoom(2)">
-                    <img class="imgborder" src="tenbed.jpeg"  alt="Ten People Bedroom.">
+                    <div>
+                        <img class="imgborder widht_60" src="tenbed.jpeg"  alt="Ten People Bedroom.">
+                    </div>
+                    <div style="margin-top: 2%">
                     <input type="radio" name="roomType" value="ten">Ten Beds Room
+                    </div>
                 </div>
                 <div class="collum imghover" onclick="chooseRoom(3)">
-                    <img class="imgborder" src="twelvebed.jpeg"  alt="Twelve People Bedroom.">
+                    <div>
+                        <img class="imgborder widht_60" src="twelvebed.jpeg"  alt="Twelve People Bedroom.">
+                    </div>
+                    <div style="margin-top: 2%">
                     <input type="radio" name="roomType" value="twelve">Twelve Beds Room
+                    </div>
                 </div>
             </div>
         </div>

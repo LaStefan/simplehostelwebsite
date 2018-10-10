@@ -17,13 +17,20 @@
 <div class="content clearfix">
     <form action="login_form.php" method="post">
         <div style="width:40%;margin-right: auto;margin-left: auto;">
-            <label class="formlabel">E-mail:</label>
-            <input class="focus" type="email" name="username"><br>
-            <label class="formlabel">Password:</label>
-            <input class="focus" type="password" name="psw"><br>
+            <label for="login_username" class="formlabel">E-mail:</label>
+            <input class="focus" type="email" name="username" id="login_username"><br>
+            <label for="pass_username" class="formlabel">Password:</label>
+            <input class="focus" id="pass_username" type="password" name="psw"><br>
         </div>
-        <input type="submit" onclick="alert('Login Successful')" value="Login">
-        <input type="submit" onclick="alert('Check Your e-mail!')" value="Forgot Password">
+        <div style="margin: 1%";>
+            <input class="checkBx" type="checkbox"  name="cbx_terms" id="cbx_keep_logged" value="keep_logged">
+            <label for="cbx_keep_logged" class="formlabel">Keep me logged in.</label>
+        </div>
+        <div style="margin: 1%";>
+            Forgot Password?
+        </div>
+        <input class="loginbtn" type="button" onclick="location.href = 'registration.php';" value="Create Account">
+        <input class="loginbtn" type="submit" onclick="alert('Redirect to Reservations.php')" value="Login">
     </form>
 </div>
 
