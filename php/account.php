@@ -18,9 +18,9 @@
     <form action="login_form.php" method="post">
         <div style="width:40%;margin-right: auto;margin-left: auto;">
             <label for="login_username" class="formlabel">E-mail:</label>
-            <input class="focus" type="email" name="username" id="login_username"><br>
+            <input class="focus" type="email" name="username" id="login_username" required><br>
             <label for="pass_username" class="formlabel">Password:</label>
-            <input class="focus" id="pass_username" type="password" name="psw"><br>
+            <input class="focus" id="pass_username" type="password" name="psw" required><br>
         </div>
         <div style="margin: 1%";>
             <input class="checkBx" type="checkbox"  name="cbx_terms" id="cbx_keep_logged" value="keep_logged">
