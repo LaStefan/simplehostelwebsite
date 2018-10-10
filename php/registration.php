@@ -14,7 +14,7 @@
     <?php include '../helper/navbar.php';?>
 <!--********************CONTENT********************-->
 <div id="id_registration" class="content clearfix" style="align-items: center; justify-content: center; display: flex">
-    <form action="../DB/register_validation.php" method="post">
+    <form action="../DB/db_helper.php" method="post">
         <div class="formdiv">
             <label class="formlabel">First name: </label>
             <input class="focus" type="text" name="firstname" placeholder="First name" required>
@@ -241,9 +241,9 @@
             <label class="formlabel">E-mail:</Label>
             <input class="focus" type="email" name="email" placeholder="example@email.com" required>
             <label class="formlabel">Password:</Label>
-            <input class="focus" type="password" name="email" placeholder="a-Z+@#19" required>
+            <input class="focus" type="password" name="password" placeholder="a-Z+@#19" required>
             <label class="formlabel">Repeat Password:</Label>
-            <input class="focus" type="password" name="email" placeholder="a-Z+@#19" required>
+            <input class="focus" type="password" name="password" placeholder="a-Z+@#19" required>
             <div style="padding: 2%">
                 <input class="checkBx" type="checkbox"  name="cbx_terms" id="cbx_terms" value="terms_conditions" required>
                 <label for="cbx_terms" class="formlabel">I accept the terms and conditions.</label>

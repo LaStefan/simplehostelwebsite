@@ -9,33 +9,28 @@ function Register($email,$password,$Fname,$Lname,$gender,$nationality,$phone,$bi
     try{
         $db=DB();
         $enc_password=hash('sha256', $password);
-        $Fname='';
-        $Lname='';
-        $gender='';
-        $nationality='';
-        $phone='';
-        $birthday='';
 
 
 
-        $query=$db->prepare("INSERT INTO customer(email,Fname,Lname,password,phone,gender,nationality,birthday)VALUES(:email,:Fname,:Lname,:password,:phone,:gender,:nationality,:birthday)");
+
+        $query=$db->prepare("INSERT INTO user(email,Fname,Lname,password,phone,gender,nationality,birthday)VALUES(:email,:Fname,:Lname,:enc_password,:phone,:gender,:nationality,:birthday)");
         $query->bindParam("email",$email,PDO::PARAM_STR_CHAR);
-        $query->bindParam("FirstName",$Fname,PDO::PARAM_STR_CHAR);
-        $query->bindParam("LastName",$Lname,PDO::PARAM_STR_CHAR);
-        $query->bindParam("Gender",$gender,PDO::PARAM_STR_CHAR);
+        $query->bindParam("firstname",$Fname,PDO::PARAM_STR_CHAR);
+        $query->bindParam("lastname",$Lname,PDO::PARAM_STR_CHAR);
+        $query->bindParam("gender",$gender,PDO::PARAM_STR_CHAR);
         $query->bindParam("nationality",$nationality,PDO::PARAM_STR);
         $query->bindParam("birthday",$birthday,PDO::PARAM_STR_CHAR);
-        $query->bindParam("passwd",$password,PDO::PARAM_STR_CHAR);
-        $query->bindParam("contact",$phone,PDO::PARAM_INT);
+        $query->bindParam("password",$password,PDO::PARAM_STR_CHAR);
+        $query->bindParam("phone",$phone,PDO::PARAM_INT);
 return $query;
 
 
     }catch(PDOException $e)
         {
             exit($e->getMessage());
-            die("An error occured, contact admin");
+
         }
-        return 0;
+
 }
 
 function CheckUser($email)
@@ -43,7 +38,7 @@ function CheckUser($email)
     try{
         $db=DB();
         var_dump($db);
-        $query=$db->prepare("SELECT id FROM customer WHERE email=:email");
+        $query=$db->prepare("SELECT id FROM user WHERE email=:email");
         $query->bindParam("email",$email,PDO::PARAM_STR_CHAR);
         $query->execute();
         if($query->rowCount()>0)
