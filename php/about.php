@@ -4,8 +4,7 @@
  * User: Stefan Lazarevic
  * Date: 04/10/2018
  * Time: 00:40
- */ ?>
-
+ */ include('../DB/session_handler.php')?>
 <html>
 <head>
     <?php include '../helper/header.php';?>

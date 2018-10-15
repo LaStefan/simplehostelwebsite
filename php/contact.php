@@ -4,7 +4,7 @@
  * User: Stefan Lazarevic
  * Date: 04/10/2018
  * Time: 00:42
- */?>
+ */include('../DB/session_handler.php')?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,9 +33,9 @@
             <img style="padding: 2%; border-radius: 5%;" src="hostelpic1.jpg" alt="Hostel" >
         </div>
         <div class="collum">
-            <form class="formlabel">
+            <form action="../DB/ContactFormAction.php" class="formlabel">
                 Full Name:
-                <input class="focus" type="text" name="fullname" placeholder="Full Name">
+                <input class="focus" type="text" name="fullName" placeholder="Full Name">
                 E-mail:
                 <input class="focus" type="email" name="email" placeholder="E-mail"><br>
                 Send us a message:

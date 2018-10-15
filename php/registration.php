@@ -290,13 +290,13 @@ try {
 $conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi396268', 'dbi396268', '12345678');
 // set the PDO error mode to exception
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-echo "Connection successfully done!";
+//echo "Connection successfully done!";
 }catch(PDOException $e)
 {
 echo "Connection failed!". $e->getMessage();
 }
 
-if(isset($_POST['submit'])) { echo "form Submitted goodly";
+if(isset($_POST['submit'])) { echo "<script> alert('Form submit good! Thanks for joining us!');</script>" ;
 try {
 
 
