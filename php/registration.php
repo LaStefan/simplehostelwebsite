@@ -5,6 +5,23 @@
  * Date: 08-Oct-18
  * Time: 15:17
  */
+
+/**
+ * Created by PhpStorm.
+ * User: Stefan Lazarevic
+ * Date: 11/10/2018
+ * Time: 15:04
+ */
+
+/*define('HOST','studmysql01.fhict.local');
+define('USER','dbi396268');
+define('PASSWORD','Toresja9898');
+define('DATABASE','dbi396268');*/
+include('../DB/session_handler.php');
+
+//$dsn="mysql:dbname=testingDB";
+//$username="root";
+//$password="Hardbas98";
 ?>
 <html>
 <head>
@@ -14,13 +31,13 @@
     <?php include '../helper/navbar.php';?>
 <!--********************CONTENT********************-->
 <div id="id_registration" class="content clearfix" style="align-items: center; justify-content: center; display: flex">
-    <form action="../DB/db_helper.php" method="post">
+    <form action="registration.php" method="post">
         <div class="formdiv">
             <label class="formlabel">First name: </label>
-            <input class="focus" type="text" name="firstname" placeholder="First name" required>
+            <input class="focus" type="text" name="firstName" placeholder="First name" required>
 
             <label class="formlabel"> Last name:</label>
-            <input class="focus" type="text" name="lastname" placeholder="Last name" required>
+            <input class="focus" type="text" name="lastName" placeholder="Last name" required>
 
             <div class="row">
                 <div class="collum" style="margin-left: 0;">
@@ -29,7 +46,7 @@
                 </div>
                 <div class="collum">
                     <label class="formlabel">Gender:</label>
-                    <input id="genderdiv" class="focus" list="gender" name="Gender" required>
+                    <input id="genderdiv" class="focus" list="gender" name="gender" required>
 
                     <datalist id="gender">
                         <option value = "Male">
@@ -237,13 +254,13 @@
                 </div>
             </div>
             <label class="formlabel">Contact:</label>
-            <input class="focus" type="tel" name="contact" placeholder="Phone number" required >
+            <input class="focus" type="tel" name="phone" placeholder="Phone number" required >
             <label class="formlabel">E-mail:</Label>
             <input class="focus" type="email" name="email" placeholder="example@email.com" required>
             <label class="formlabel">Password:</Label>
             <input class="focus" type="password" name="password" placeholder="a-Z+@#19" required>
             <label class="formlabel">Repeat Password:</Label>
-            <input class="focus" type="password" name="password" placeholder="a-Z+@#19" required>
+            <input class="focus" type="password" name="passWord" placeholder="a-Z+@#19" required>
             <div style="padding: 2%">
                 <input class="checkBx" type="checkbox"  name="cbx_terms" id="cbx_terms" value="terms_conditions" required>
                 <label for="cbx_terms" class="formlabel">I accept the terms and conditions.</label>
@@ -255,8 +272,8 @@
         </div>
         <div style="display: flex; justify-content: center">
             <!--input style="float:left" type="submit" value="Log in" onclick="account.php"-->
-            <input  class="loginbtn" type="submit" value="Create Account" onclick="alert('Account Created Successfully! Check your e-mail. '<b>'Redirect to Reservations.php')">
-            <input class="loginbtn" type="reset" value="Reset Form">
+            <input  class="loginbtn" name ="submit" type="submit" value="Create Account" onclick="alert('Account Created Successfully! Check your e-mail. '<b>'Redirect to Reservations.php')">
+            <input class="loginbtn" type="reset"  value="Reset Form">
         </div>
     </form>
 </div>
@@ -268,3 +285,47 @@
 </body>
 <script src="hostel_script.js"></script>
 </html>
+<?php
+try {
+$conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi396268', 'dbi396268', '12345678');
+// set the PDO error mode to exception
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+echo "Connection successfully done!";
+}catch(PDOException $e)
+{
+echo "Connection failed!". $e->getMessage();
+}
+
+if(isset($_POST['submit'])) { echo "form Submitted goodly";
+try {
+
+
+
+$Email = $_POST['email'];
+$FirstName = $_POST['firstName'];
+$LastName = $_POST['lastName'];
+$Password = $_POST['password'];
+$Nationality = $_POST['nationality'];
+$Phone = $_POST['phone'];
+$Birthday = $_POST['birthday'];
+$Gender = $_POST['gender'];
+$PassWord = $_POST['passWord'];
+if (($Email == '') || ($FirstName == '') || ($LastName == '') || ($Password == '') || ($PassWord == '') || ($Nationality == '') || ($Phone == '') || ($Birthday == '') || ($Gender == '')) {
+echo "Please fill in all the fields!";
+} else if ($PassWord != $Password) {
+echo "Password does not match!";
+} else {
+$sql = "INSERT INTO customer VALUES(id,:firstName, :lastName, :phone,:email,:password,:gender, :birthday,:nationality)";
+
+$preparedSQL = $conn->prepare($sql);
+
+$preparedSQL->execute([':email' => $Email, ':password' => $PassWord, ':gender' => $Gender, ':firstName' => $FirstName , ':lastName' => $LastName
+    , ':phone' => $Phone, ':birthday' =>$Birthday , ':nationality' => $Nationality]);
+
+}
+} catch (PDOException $e) {
+echo "Database error!" . $e->getMessage();
+} catch (InvalidArgumentException $e) {
+echo "Unexpected input type." . $e->getMessage();
+}
+}?>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36cba4cf-1563-4eb2-ac4c-fdeaabb33be1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DB/db_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB/db_connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DB/registrationAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/db_connection.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DB/db_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/DB/db_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/registration.php" afterDir="false" />
     </list>
@@ -30,46 +32,67 @@
     <session id="-1423552103">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.22" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ini" value="3" />
-          <entry key="php" value="12" />
+          <entry key="php" value="35" />
           <entry key="rar" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="3" />
-          <entry key="PHP" value="12" />
+          <entry key="PHP" value="35" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ini" value="6" />
-          <entry key="php" value="987" />
+          <entry key="php" value="3326" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="6" />
-          <entry key="PHP" value="987" />
+          <entry key="PHP" value="3326" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-306247189">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2157">
+              <caret line="135" column="4" selection-start-line="121" selection-start-column="13" selection-end-line="135" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,9 +101,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="C:/xampp/php/php.ini" />
-        <option value="$PROJECT_DIR$/DB/db_connection.php" />
         <option value="$PROJECT_DIR$/DB/db_helper.php" />
+        <option value="$PROJECT_DIR$/DB/db_connection.php" />
+        <option value="$PROJECT_DIR$/DB/registerAction.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/index.php" />
         <option value="$PROJECT_DIR$/php/registration.php" />
+        <option value="$PROJECT_DIR$/DB/registrationAction.php" />
       </list>
     </option>
   </component>
@@ -106,7 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,6 +153,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,16 +196,21 @@
       <workItem from="1539073171110" duration="340000" />
       <workItem from="1539073826649" duration="446000" />
       <workItem from="1539183905413" duration="5556000" />
+      <workItem from="1539256263444" duration="4096000" />
+      <workItem from="1539260464270" duration="104000" />
+      <workItem from="1539260865268" duration="8823000" />
+      <workItem from="1539270198190" duration="1192000" />
+      <workItem from="1539342893185" duration="136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9478000" />
+    <option name="totallyTimeSpent" value="23829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -215,19 +246,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/register_validation.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/PHP.rar">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/PHP.rar" />
     <entry file="file://$USER_HOME$/Downloads/SOnyaPHP/loginAction.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/DB/registerAction.php" />
     <entry file="file://$USER_HOME$/Downloads/SOnyaPHP/signupAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="680">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -238,23 +265,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/db_connection.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/index.php" />
+    <entry file="file://$PROJECT_DIR$/php/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/session_handler.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/register_validation.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB/registrationAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#6#145#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1054">
+          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/registration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="246" column="37" lean-forward="true" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="37" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="-2157">
+          <caret line="135" column="4" selection-start-line="121" selection-start-column="13" selection-end-line="135" selection-end-column="4" />
         </state>
       </provider>
     </entry>

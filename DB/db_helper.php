@@ -1,6 +1,6 @@
 <?php
 
-include('db_connection.php');
+include('registerAction.php');
 
 
 function Register($email,$password,$Fname,$Lname,$gender,$nationality,$phone,$birthday)
