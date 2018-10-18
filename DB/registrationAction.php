@@ -1,16 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Stefan Lazarevic
- * Date: 11/10/2018
- * Time: 15:04
- */
-
-/*define('HOST','studmysql01.fhict.local');
-define('USER','dbi396268');
-define('PASSWORD','Toresja9898');
-define('DATABASE','dbi396268');*/
-include('session_handler.php');
 try {
     $conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi396268', 'dbi396268', '12345678');
 // set the PDO error mode to exception
@@ -21,7 +9,7 @@ try {
     echo "Connection failed!". $e->getMessage();
 }
 
-if(isset($_POST['submit'])) { echo "<script> alert('Form submit good! Thanks for joining us!');</script>" ;
+if(isset($_POST['submit'])) { echo "<script> alert('Form submit good! Thanks for joining us!');window.location.href='../php/reservations.php';</script>" ;
     try {
 
 
@@ -47,10 +35,12 @@ if(isset($_POST['submit'])) { echo "<script> alert('Form submit good! Thanks for
             $preparedSQL->execute([':email' => $Email, ':password' => $PassWord, ':gender' => $Gender, ':firstName' => $FirstName , ':lastName' => $LastName
                 , ':phone' => $Phone, ':birthday' =>$Birthday , ':nationality' => $Nationality]);
 
+
+
         }
     } catch (PDOException $e) {
         echo "Database error!" . $e->getMessage();
     } catch (InvalidArgumentException $e) {
         echo "Unexpected input type." . $e->getMessage();
     }
-}?>
+}

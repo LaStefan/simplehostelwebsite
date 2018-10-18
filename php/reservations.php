@@ -5,27 +5,7 @@
  * Date: 04/10/2018
  * Time: 00:43
  */
-session_start();
-$emailError="";
-$passwordError="";
-$FnameError="";
-$LnameError="";
-$GenderError="";
-$birthdayError="";
-$nationalityError="";
-$phoneError="";
-$fields=isset($_SESSION['fields'])?$_SESSION['fields'] :[];
-$errors=isset($_SESSION['errors'])?$_SESSION['errors']: [];
-//print_r($errors);
-//Get error messages
-$emailError=array_key_exists('email',$errors)? $errors['email']:'';
-$passwordError=array_key_exists('password',$errors)? $errors['password']:'';
-$FnameError=array_key_exists('Fname',$errors)? $errors['Fname']:'';
-$LnameError=array_key_exists('Lname',$errors)? $errors['Lname']:'';
-$GenderError=array_key_exists('gender',$errors)? $errors['gender']:'';
-$birthdayError=array_key_exists('birthday',$errors)? $errors['birthday']:'';
-$nationalityError=array_key_exists('nationality',$errors)? $errors['nationality']:'';
-$phoneError=array_key_exists('phone',$errors)? $errors['phone']:'';
+
 ?>
 <html>
 <head>
