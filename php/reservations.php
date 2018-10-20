@@ -7,6 +7,7 @@
  */
 
 ?>
+<?php include('../DB/loginCheck.php');?>
 <html>
 <head>
     <?php include '../helper/header.php';?>
@@ -18,7 +19,7 @@
 <!--********************CONTENT********************-->
 
 <div class="content clearfix">
-    <form action="../DB/reservations_form.php" method="post">
+    <form action="" method="post">
         <div id = "id_dates" class="row">
             <div class="inrow">
                 <label class="formlabel">Arrival Date</label>

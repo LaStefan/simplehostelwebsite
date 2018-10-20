@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 try {
     $conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi396268', 'dbi396268', '12345678');
 // set the PDO error mode to exception

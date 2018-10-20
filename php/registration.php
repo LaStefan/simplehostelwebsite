@@ -13,15 +13,10 @@
  * Time: 15:04
  */
 
-/*define('HOST','studmysql01.fhict.local');
-define('USER','dbi396268');
-define('PASSWORD','Toresja9898');
-define('DATABASE','dbi396268');*/
-include('../DB/session_handler.php');
 
-//$dsn="mysql:dbname=testingDB";
-//$username="root";
-//$password="Hardbas98";
+//include('../DB/session_handler.php');
+session_start();
+
 ?>
 <html>
 <head>

@@ -18,6 +18,7 @@ if (isset($_POST['submit'])){ //echo "<script> alert('Logged in!');</script>" ;
             $stmt = $conn->prepare($sqlGetStatement);
             $inputEmail = $_POST['username'];
             $inputPassword = $_POST['psw'];
+
             $result = $stmt -> execute(['email' => $inputEmail, 'password' => $inputPassword]);
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             if ($stmt->rowCount() > 0){
@@ -25,13 +26,17 @@ if (isset($_POST['submit'])){ //echo "<script> alert('Logged in!');</script>" ;
                 if(isset($_SESSION['email']))
                 {
                     $_SESSION['email']=$row['email'];
+
                 }
 
                 if(isset($_SESSION['password']))
                 {
                     $_SESSION['password'] = $row['password'];
+
                 }
-                $_SESSION['login']= "OK";
+                $_SESSION['userID']=$row;
+
+
                 echo "<script>
                     alert('Logged in! Welcome back dear customer!');
                     window.location.href='../php/reservations.php';
